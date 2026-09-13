@@ -1,4 +1,4 @@
-baseURL = 'https://hung-nguyen-quoc11278.github.io/' # Thay bằng link trang cá nhân/GitHub Pages của bạn
+baseURL = 'https://hung-nguyen-quoc11278.github.io/hungdaily-blog/' # Thay bằng link trang cá nhân/GitHub Pages của bạn
 languageCode = 'vi'
 title = 'Hung Daily Blog'
 theme = 'blowfish'
