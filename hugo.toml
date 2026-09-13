@@ -1,3 +1,21 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = 'https://hung-nguyen-quoc11278.github.io/' # Thay bằng link trang cá nhân/GitHub Pages của bạn
+languageCode = 'vi'
+title = 'Hung Daily Blog'
+theme = 'blowfish'
+
+[params]
+  colorScheme = "default" # Hoặc "neutral", "dark",...
+  defaultTheme = "system" # Tự động theo giao diện sáng/tối của máy
+  showReadingTime = true
+  showAuthor = true
+
+[author]
+  name = "Hung Nguyen"
+  image = "img/author.jpg" # Ảnh đại diện của bạn đặt trong thư mục assets/img/
+  headline = "Lập trình viên & Người mê công nghệ tối giản"
+  bio = "Chia sẻ kiến thức về Hugo, Git và công nghệ nguồn mở."
+
+[[params.social]]
+  name = "GitHub"
+  icon = "github"
+  url = "https://github.com/Hung-Nguyen-Quoc11278"
