@@ -1,19 +1,27 @@
-baseURL = 'https://hung-nguyen-quoc11278.github.io/hungdaily-blog/' # Thay bằng link trang cá nhân/GitHub Pages của bạn
+baseURL = 'https://hung-nguyen-quoc11278.github.io/hungdaily-blog/'
 languageCode = 'vi'
 title = 'Hung Daily Blog'
 theme = 'blowfish'
 
 [params]
-  colorScheme = "default" # Hoặc "neutral", "dark",...
-  defaultTheme = "system" # Tự động theo giao diện sáng/tối của máy
-  showReadingTime = true
-  showAuthor = true
+  homepageStyle = "card" # Hoặc "hero"
+  displayFullLogo = false
+  
+  # Hiển thị các bài viết gần đây ngay trang chủ
+  showRecent = true
+  recentLimit = 5
+  enableSearch = true
+
+  # --- BỔ SUNG CÁC THAM SỐ NÀY ĐỂ HIỆN BÀI VIẾT NGOÀI TRANG CHỦ ---
+  showRecentArticles = true
+  articleView = "card" # Kiểu hiển thị danh sách bài viết: "card", "row", hoặc "compact"
+  showTaxonomies = true # Hiển thị tags và categories trên trang chủ nếu muốn
 
 [author]
   name = "Hung Nguyen"
-  image = "img/author.jpg" # Ảnh đại diện của bạn đặt trong thư mục assets/img/
-  headline = "Lập trình viên & Người mê công nghệ tối giản"
-  bio = "Chia sẻ kiến thức về Hugo, Git và công nghệ nguồn mở."
+  image = "img/author.jpg" 
+  headline = "Lười thâm niên"
+  bio = "Lười, cụ thể là boss lười"
 
 [[params.social]]
   name = "GitHub"
@@ -24,3 +32,6 @@ theme = 'blowfish'
   tag = "tags"
   category = "categories"
   series = "series"
+
+[outputs]
+  home = ["HTML", "JSON", "RSS"]
