@@ -4,22 +4,19 @@ title = 'Hung Daily Blog'
 theme = 'blowfish'
 
 [params]
-  homepageStyle = "card" # Hoặc "hero"
+  homepageStyle = "card"
   displayFullLogo = false
-  
-  # Hiển thị các bài viết gần đây ngay trang chủ
   showRecent = true
   recentLimit = 5
   enableSearch = true
-
-  # --- BỔ SUNG CÁC THAM SỐ NÀY ĐỂ HIỆN BÀI VIẾT NGOÀI TRANG CHỦ ---
   showRecentArticles = true
-  articleView = "card" # Kiểu hiển thị danh sách bài viết: "card", "row", hoặc "compact"
-  showTaxonomies = true # Hiển thị tags và categories trên trang chủ nếu muốn
+  articleView = "card"
+  showTaxonomies = true
+  showAuthor = true
 
 [author]
   name = "Hung Nguyen"
-  image = "img/author.jpg" 
+  image = "img/author.jpg"
   headline = "Lười thâm niên"
   bio = "Lười, cụ thể là boss lười"
 
@@ -35,3 +32,18 @@ theme = 'blowfish'
 
 [outputs]
   home = ["HTML", "JSON", "RSS"]
+
+[[menu.main]]
+  name = "Bài viết"
+  pageRef = "/posts"
+  weight = 1
+
+[[menu.main]]
+  name = "Chủ đề"
+  pageRef = "/categories"
+  weight = 2
+
+[[menu.main]]
+  name = "Thẻ"
+  pageRef = "/tags"
+  weight = 3
