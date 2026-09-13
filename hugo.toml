@@ -19,3 +19,8 @@ theme = 'blowfish'
   name = "GitHub"
   icon = "github"
   url = "https://github.com/Hung-Nguyen-Quoc11278"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
