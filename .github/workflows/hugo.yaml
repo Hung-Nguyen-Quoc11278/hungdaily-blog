@@ -1,29 +1,23 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
 name: Deploy Hugo site to Pages
 
 on:
-  # Trực tiếp chạy khi có push lên nhánh main
   push:
     branches:
       - main
 
-  # Cho phép bạn chạy thủ công từ tab Actions trên GitHub
   workflow_dispatch:
 
-# Thiết lập quyền cho GITHUB_TOKEN để deployment
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Chỉ cho phép một deployment chạy đồng thời
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
-# Định nghĩa môi trường mặc định của Hugo
 env:
-  HUGO_VERSION: 0.125.0 # Bạn có thể thay đổi phiên bản Hugo tương thích trên máy của bạn
+  HUGO_VERSION: 0.165.0 
 
 jobs:
   build:
@@ -32,7 +26,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive  # Cực kỳ quan trọng để kéo theo theme Blowfish!
+          submodules: recursive 
           fetch-depth: 0
 
       - name: Setup Hugo
@@ -49,7 +43,6 @@ jobs:
         with:
           path: ./public
 
-  # Job deploy lên GitHub Pages
   deploy:
     environment:
       name: github-pages
