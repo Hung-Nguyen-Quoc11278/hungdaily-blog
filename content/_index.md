@@ -5,4 +5,4 @@ draft: false
 layout: "home"
 ---
 
-Chào mừng đến với không gian chia sẻ của một lập trình viên lười thâm niên. Nơi lưu trữ những dòng suy nghĩ ngẫu hứng và kiến thức công nghệ tối giản.
+He he và queo căm các tềnh êu đã đến với trang này của Hưng nha.
