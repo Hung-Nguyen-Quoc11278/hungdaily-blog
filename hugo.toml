@@ -7,7 +7,6 @@ theme = 'blowfish'
   enableSearch = true
   articleView = "card"
   showTaxonomies = true
-
   # Cấu hình hiển thị trang chủ
   [params.homepage]
     layout = "profile"        # "profile" hoặc "hero" để hiển thị thông tin tác giả
@@ -15,7 +14,7 @@ theme = 'blowfish'
     showRecent = true
     recentLimit = 5
 
-  # Cấu hình Tác giả chuẩn Blowfish (Bắt buộc phải nằm dưới params)
+  # Cấu hình Tác giả chuẩn Blowfish
   [params.author]
     name = "Hung Nguyen"
     image = "img/author.jpg"   # File đặt trong folder `assets/img/author.jpg` hoặc `static/img/author.jpg`
