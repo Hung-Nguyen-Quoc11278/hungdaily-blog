@@ -4,26 +4,29 @@ title = 'Hung Daily Blog'
 theme = 'blowfish'
 
 [params]
-  homepageStyle = "card"
-  displayFullLogo = false
-  showRecent = true
-  recentLimit = 5
   enableSearch = true
-  showRecentArticles = true
   articleView = "card"
   showTaxonomies = true
-  showAuthor = true
 
-[author]
-  name = "Hung Nguyen"
-  image = "img/author.jpg"
-  headline = "Lười thâm niên"
-  bio = "Lười, cụ thể là boss lười"
+  # Cấu hình hiển thị trang chủ
+  [params.homepage]
+    layout = "profile"        # "profile" hoặc "hero" để hiển thị thông tin tác giả
+    homepageStyle = "card"     # Kiểu hiển thị danh sách bài viết bên dưới
+    showRecent = true
+    recentLimit = 5
 
-[[params.social]]
-  name = "GitHub"
-  icon = "github"
-  url = "https://github.com/Hung-Nguyen-Quoc11278"
+  # Cấu hình Tác giả chuẩn Blowfish (Bắt buộc phải nằm dưới params)
+  [params.author]
+    name = "Hung Nguyen"
+    image = "img/author.jpg"   # File đặt trong folder `assets/img/author.jpg` hoặc `static/img/author.jpg`
+    headline = "Lì kinh khủng"
+    bio = "Lì, siêu lì lợm"
+    links = [
+      { facebook = "https://www.facebook.com/nguyen.quoc.hung.131770?locale=vi_VN" },
+      { whatsapp = "https://wa.me/84373434798" },
+      { github = "https://github.com/Hung-Nguyen-Quoc11278" },
+      { email = "mailto:hunggoodboy34@gmail.com" }
+    ]
 
 [taxonomies]
   tag = "tags"
