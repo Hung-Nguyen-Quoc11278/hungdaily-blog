@@ -8,6 +8,7 @@ theme = 'blowfish'
   articleView = "card"
   showTaxonomies = true
   # Cấu hình hiển thị trang chủ
+  
   [params.homepage]
     layout = "profile"        # "profile" hoặc "hero" để hiển thị thông tin tác giả
     homepageStyle = "card"     # Kiểu hiển thị danh sách bài viết bên dưới

@@ -1,0 +1,4 @@
+{{ $vnDialog := resources.Get "js/avatar-vn-dialog.js" | resources.Minify }}
+{{ if $vnDialog }}
+  <script src="{{ $vnDialog.RelPermalink }}" defer></script>
+{{ end }}
