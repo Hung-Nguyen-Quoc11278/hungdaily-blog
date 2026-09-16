@@ -192,7 +192,7 @@ function showVNDialog() {
     dialog.classList.add('vn-shake-effect');
     
     wrongBadge.style.display = 'block';
-    typeWriter(wrongBadge, 'Sai lè lè! Chọn lại!', 25);
+    typeWriter(wrongBadge, 'E hèm, cơ hội khác', 25);
 
     setTimeout(() => {
       dialog.classList.remove('vn-shake-effect');
@@ -213,7 +213,7 @@ function showVNDialog() {
 
     setTimeout(() => {
       titleEl.style.color = '#4ade80';
-      typeWriter(titleEl, 'CHUẨN KHÔNG CẦN CHỈNH', 30);
+      typeWriter(titleEl, 'CHUẨN CƠM MẸ NẤU', 30);
       typeWriter(textEl, 'Quá chuẩn ní ơi, tinh mắt đấy!', 35, () => {
         setTimeout(() => {
           removeVNDialog();
